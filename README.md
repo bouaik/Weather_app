@@ -58,7 +58,7 @@ In this project, I built a Weather app with javascript, and connect it with an A
 
 ## Live Link 
 
-[Click Here](https://sharp-archimedes-73665c.netlify.app/)
+[Click Here](https://pensive-blackwell-c9ce4d.netlify.app/)
 
 
 <!-- BUILD WITH -->
