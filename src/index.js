@@ -1,7 +1,8 @@
 import 'bootstrap'
 import './styles/main.scss'
-import AjaxWheather from './js/ajaxfetch'
 
+import AjaxWheather from './js/ajaxfetch'
+import Display from './js/display'
 
 
 (function () {
@@ -12,6 +13,7 @@ import AjaxWheather from './js/ajaxfetch'
     const loading = document.querySelector('.spinner-border')
 
     const ajax = new AjaxWheather()
+    const display = new Display()
 
     form.addEventListener('submit', e => {
         e.preventDefault()
@@ -27,6 +29,7 @@ import AjaxWheather from './js/ajaxfetch'
                     showFeedback('city with such name cannot be found')
                 } else {
                     loading.classList.remove('showItem')
+                    display.showWeather(data)
                     cityInput.value = ''
                 }
             })
