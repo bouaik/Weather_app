@@ -1,4 +1,4 @@
-import 'bootstrap';
+import 'bootstrap';// eslint-disable-line
 import './styles/main.scss';
 
 import AjaxWheather from './js/ajaxfetch';
