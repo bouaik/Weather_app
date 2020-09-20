@@ -41,7 +41,7 @@ import Display from './js/display';
           display.showWeather(data);
           cityInput.value = '';
         }
-      }).catch(error => console.log(error))
+      }).catch(error => showFeedback(error))
     }
   });
 }());
