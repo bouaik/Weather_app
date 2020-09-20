@@ -6,6 +6,52 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
+        <div class="row">
+         <div class="col mt-5 col-md-8 mx-auto">
+           <h2 class="text-center mb-5 title h1 text-dark">Weather App</h2>
+          <div class="feedback alert alert-danger text-capitalize text-center">
+      
+          </div>
+          <div class="card card-body">
+           <div class="card-title text-center text-capitalize">
+            <h3>search city</h3>
+           </div>
+           <form id="wheatherForm">
+            <div class="input-group">
+             <input type="text" class="form-control text-capitalize cityInput" id="cityInput">
+             <div class="input-group-append">
+              <button type="submit" class="text-capitalize submitBtn">submit</button>
+             </div>
+            </div>
+           </form>
+           <!--  -->
+           <div class="spinner-border mt-3 feedback" role="status">
+               <span class="sr-only">Loading...</span>
+           </div>
+           <div class="results text-center mt-5">
+            <h6 class="text-capitalize">city name : <span id="cityName"></span> </h6>
+            <h6 class="text-capitalize">country : <span id="cityCountry"></span> </h6>
+            <img src="#" id="cityIcon" />
+            <h6 class="text-capitalize  h1">temperature: <span id="cityTemp"></span> <span class="m-3">
+              <img src="https://raw.githubusercontent.com/john-smilga/js-wheatherAPI-setup/aa0aa409dfaa179f3ea96f08ab85979a8e2a0014/img/temp.svg" alt="">
+             </span></h6>
+             <div class="custom-control custom-radio custom-control-inline">
+               <input type="radio" id="tempC" name="temp" class="custom-control-input">
+               <label class="custom-control-label" for="tempC">Celsius</label>
+             </div>
+             <div class="custom-control custom-radio custom-control-inline">
+               <input type="radio" id="tempF" name="temp" class="custom-control-input">
+               <label class="custom-control-label" for="tempF">Fahrenheit</label>
+             </div>
+            <h6 class="text-capitalize">humidity : <span id="cityHumidity"></span><span class="m-3">
+              <img src="https://raw.githubusercontent.com/john-smilga/js-wheatherAPI-setup/aa0aa409dfaa179f3ea96f08ab85979a8e2a0014/img/humidity.svg" alt="">
+             </span> </h6>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
     
 
 
