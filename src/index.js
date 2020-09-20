@@ -5,7 +5,7 @@ import AjaxWheather from './js/ajaxfetch';
 import Display from './js/display';
 
 
-(function () { // eslint-disable-line
+(() => { // eslint-disable-line
   const form = document.getElementById('wheatherForm');
   const cityInput = document.getElementById('cityInput');
   const feedback = document.querySelector('.feedback');
@@ -41,7 +41,7 @@ import Display from './js/display';
           display.showWeather(data);
           cityInput.value = '';
         }
-      }).catch(error => showFeedback(error))
+      }).catch(error => showFeedback(error));
     }
   });
-}());
+})();
